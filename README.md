@@ -12,3 +12,7 @@
 
 - **Salário Líquido:**  
   - Fórmula: `salário_liquido = salário_bruto - desconto_inss - desconto_irpf`  
+
+
+
+5 funcionarios

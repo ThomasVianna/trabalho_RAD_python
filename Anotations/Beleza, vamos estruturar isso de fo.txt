@@ -1,0 +1,63 @@
+Beleza, vamos estruturar isso de forma organizada. Como o trabalho exige **programação estruturada** (ou seja, sem orientação a objetos), não vamos criar classes, mas sim **pastas e arquivos** com funções e dados. Aqui está uma sugestão de organização:
+
+---
+
+## 📂 Estrutura de Pastas e Arquivos
+
+```
+folha_pagamento/
+│
+├── main.py                # Programa principal (menu e execução)
+├── funcionarios.py        # Cadastro e listagem de funcionários
+├── inss.py                # Funções para cálculo do INSS
+├── irrf.py                # Funções para cálculo do IRRF
+├── transporte.py          # Função para cálculo do vale transporte
+├── salario.py             # Funções para cálculo do salário líquido
+└── utils.py               # Funções auxiliares (validações, formatações)
+```
+
+---
+
+## 🔹 Conteúdo de cada arquivo
+
+- **main.py**
+  - Menu principal (cadastrar funcionário, listar, calcular folha).
+  - Chama funções dos outros módulos.
+
+- **funcionarios.py**
+  - Estrutura de dados (lista ou dicionário) para armazenar pelo menos 5 funcionários.
+  - Funções: `cadastrar_funcionario()`, `listar_funcionarios()`.
+
+- **inss.py**
+  - Função `calcular_inss(salario_bruto)` que aplica a tabela de contribuição.
+
+- **irrf.py**
+  - Função `calcular_irrf(base_calculo)` que aplica a tabela do IRRF.
+
+- **transporte.py**
+  - Função `calcular_vale_transporte(salario_bruto)` → 6% do salário bruto.
+
+- **salario.py**
+  - Função `calcular_salario_liquido(salario_bruto)` que integra INSS, IRRF e VT.
+
+- **utils.py**
+  - Funções auxiliares (ex.: arredondar valores, formatar moeda).
+
+---
+
+## 🔹 Fluxo do Programa
+
+1. Usuário cadastra funcionários (mínimo 5).  
+2. Para cada funcionário, calcula-se:  
+   - Salário bruto  
+   - Desconto INSS  
+   - Base de cálculo IRRF  
+   - Desconto IRRF  
+   - Vale transporte  
+   - Salário líquido  
+3. Exibe relatório da folha de pagamento.
+
+---
+
+👉 Assim você mantém o código organizado, modular e fácil de apresentar.  
+Quer que eu monte um **exemplo de código inicial** para o `main.py` e `funcionarios.py`, só para você ver como ficaria na prática?
